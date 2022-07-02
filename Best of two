@@ -1,0 +1,28 @@
+#include <stdio.h>
+#define max 10000
+
+int main(void) {
+    int n,i;
+    int a[max],b[max];
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+    {
+        scanf("%d %d",&a[i],&b[i]);
+    }
+
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>=b[i])
+        {
+            printf("%d\n",a[i]);
+        }
+        else if(b[i]>=a[i])
+        {
+            printf("%d\n",b[i]);
+        }
+    }
+	// your code goes here
+	return 0;
+}
+
