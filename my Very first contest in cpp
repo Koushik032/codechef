@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,a,b;
+    
+    cin >> n >> a >> b;
+    
+    int sum = n-a;
+    int avg = sum-b;
+    
+    cout << sum <<" "<< avg << endl;
+    
+	// your code goes here
+	return 0;
+}
