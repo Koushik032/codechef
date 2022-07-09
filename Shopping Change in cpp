@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t,i;
+    cin >> t;
+    
+    int x;
+    for(i=1;i<=t;i++)
+    {
+        cin >> x;
+        
+        int pay=100-x;
+        
+        cout << pay << endl;
+    }
+	// your code goes here
+	return 0;
+}
