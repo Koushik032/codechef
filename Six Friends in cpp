@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t,i;
+    cin >> t;
+    
+    int x,y;
+    
+    for(i=1;i<=t;i++)
+    {
+        cin >> x >> y;
+        
+        int tri_pay=x*3;
+        int dou_pay=y*2;
+        
+        if(tri_pay <= dou_pay)
+        {
+            cout << tri_pay <<endl;
+        }
+        else
+        {
+            cout << dou_pay <<endl;
+        }
+    }
+	// your code goes here
+	return 0;
+}
