@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    int a,b,sum=0;
+    
+    for(int i=1;i<=t;i++)
+    {
+        cin >> a >> b;
+        
+        sum=(a/10)*b;
+        
+        cout << sum<< endl;
+    }
+	// your code goes here
+	return 0;
+}
