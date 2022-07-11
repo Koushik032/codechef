@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+void solution()
+{
+    int maxt,maxn,sumn;
+    cin >> maxt >> maxn >> sumn;
+
+    long long ans=0;
+
+    while(maxt && sumn)
+    {
+        int n=min(maxn,sumn);
+        ans+=n*n;
+        sumn-=n;
+        maxt--;
+    }
+    cout << ans << endl;
+}
+int main()
+{
+int t;
+cin >> t;
+while(t--) solution();
+    return 0;
+}
