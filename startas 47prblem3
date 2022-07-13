@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int t;
+    int x;
+    int count=0,count_note=0;
+    cin >> t;
+    for(int i=1;i<=t;i++)
+    {
+        cin >> x;
+        while(x!=0)
+        {
+            if(x%10==0)
+            {
+                count++;
+                x-=10;
+            }
+            else
+            {
+                count_note++;
+                x-=1;
+            }
+        }
+        cout << count_note <<endl;
+        count_note=0;
+    }
+}
