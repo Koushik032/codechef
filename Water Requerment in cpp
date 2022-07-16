@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    int n;
+    cin >> t;
+    while(t!=0)
+    {
+        cin >> n;
+        
+         cout << 2*n <<endl;
+         t--;
+    }
+	// your code goes here
+	return 0;
+}
