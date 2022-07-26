@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    int x,y,a,b;
+    int imax,mini;
+    for(int i=0;i<t;i++)
+    {
+        cin >> x >> y ;
+        if(x>y)
+        {
+            imax=x;
+            mini=y;
+        }
+        else
+        {
+            imax=y;
+            mini=x;
+        }
+        int point=7-imax;
+        cout << point << endl;
+    }
+	// your code goes here
+	return 0;
+}
