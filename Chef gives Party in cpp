@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    int n,x,k,i;
+    for(i=0;i<t;i++)
+    {
+        cin >> n >> x >> k;
+        int price = n*x;
+        if(price<=k)
+        {
+            cout << "YES" << endl;
+        }
+        else
+        {
+            cout << "NO" << endl;
+        }
+    }
+	// your code goes here
+	return 0;
+}
