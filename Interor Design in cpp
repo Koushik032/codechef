@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    int a,b,x,y;
+    for(int i=0;i<t;i++)
+    {
+        cin >> a >> b >> x >> y;
+        int first_price=a+b;
+        int second_price=x+y;
+        if(first_price>second_price)
+        {
+            cout << second_price << endl;
+        }
+        else
+        {
+            cout << first_price << endl;
+        }
+    }
+	// your code goes here
+	return 0;
+}
