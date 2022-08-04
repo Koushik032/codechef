@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t ;
+    int n,x,y,a,b;
+    //int petrol_price,deisel_price;
+    while(t--){
+        cin >> n >> x >> y >> a >> b;
+
+        double petrol_price=((double)n/a)*x;
+        double deisel_price=((double)n/b)*y;
+        if(petrol_price>deisel_price)
+    {
+        cout << "DIESEL" <<endl;
+    }
+    else if(petrol_price<deisel_price)
+    {
+        cout << "PETROL" <<endl;
+    }
+    else
+    {
+        cout << "ANY" <<endl;
+    }
+    }
+
+	// your code goes here
+	return 0;
+}
