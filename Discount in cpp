@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >>t;
+    int n,ammount;
+    while(t--){
+        cin >> n;
+        ammount=100-n;
+        cout << ammount << endl;
+    }
+	// your code goes here
+	return 0;
+}
