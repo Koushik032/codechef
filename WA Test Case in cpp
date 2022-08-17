@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define endl '\n';
+int main()
+{
+  int n;
+  cin >> n;
+  while(n--)
+  {
+    int t;
+    cin >> t;
+
+    int arr[t];
+
+    for(int i=0;i<t;i++)
+    {
+      cin >> arr[i];
+    }
+    string s;
+    cin >> s;
+
+    vector<int>v;
+
+    for(int i=0;i<s.size();i++)
+    {
+      if(s[i]=='0')
+      {
+        v.push_back(arr[i]);
+      }
+    }
+   int value= *min_element(v.begin(),v.end());
+
+    cout << value << endl;
+    s.clear();
+
+  }
+  return 0;
+}
