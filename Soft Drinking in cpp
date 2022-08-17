@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define endl '\n';
+int main()
+{
+  long long n,k,l,c,d,p,nl,np;
+
+  cin >> n >> k >> l>> c>>d>>p>>nl>>np;
+
+  int drinks=(k*l)/nl;
+  int toasts=c*d;
+  int enough=p/np;
+
+  if(drinks<toasts && drinks<enough)
+  {
+    cout << drinks/n << endl;
+  }
+  else if(drinks>toasts && toasts<enough)
+  {
+    cout << toasts/n << endl;
+  }
+  else if(enough<toasts && drinks>enough)
+  {
+    cout << enough/n << endl;
+  }
+  else{
+    cout << enough/n << endl;
+  }
+  return 0;
+}
