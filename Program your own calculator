@@ -1,0 +1,27 @@
+#include <iostream>
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int main() {
+    ll a,b;
+    char ch;
+    cin >> a >> b >> ch;
+
+    if(ch=='+'){
+        cout << a+b << endl;
+    }
+    else if(ch=='-'){
+        cout << a-b << endl;
+    }
+    else if(ch=='*'){
+        cout << a*b << endl;
+    }
+    else if(ch=='/'){
+        double d=(double)a/b;
+        cout <<fixed<<setprecision(13)<<d<<endl;
+    }
+
+	// your code goes here
+	return 0;
+}
