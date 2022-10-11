@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define max1 100000
+int main() {
+     ll t;
+     cin >> t;
+     while(t--){
+        ll n;
+        cin >> n;
+        string s;
+        cin >> s;
+
+        map<char,ll>cnt;
+
+        for(ll i=0;i<n;i++)
+        {
+        	cnt[s[i]]++;
+        }
+        ll flag=0;
+        for(auto u:cnt){
+        	if(u.second%2!=0)
+        	{
+        		flag=1;
+        		break;
+        	}
+        }
+        if(flag==1)
+        {
+        	cout<<"NO"<<endl;
+        }
+        else{
+        	cout<<"YES"<<endl;
+        }
+
+    }
+
+    return 0;
+}
