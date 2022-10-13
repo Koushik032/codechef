@@ -1,0 +1,27 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+int main() {
+    ll t;
+    cin>>t;
+    while(t--){
+        ll w1,w2,x1,x2,m;
+        cin>>w1>>w2>>x1>>x2>>m;
+
+        ll a=w2-w1;
+
+        double d=((double)a/m);
+
+        if(d>=x1 && d<=x2){
+            cout<<1<<endl;
+        }
+        else{
+            cout<<0<<endl;
+        }
+        }
+    // your code goes here
+    return 0;
+}
+
