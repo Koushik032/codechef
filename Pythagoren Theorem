@@ -1,0 +1,33 @@
+///Joy Sri-Krisno///
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define max1 10000
+#define pb push_back
+#define fi first
+#define se second
+#define vst() sort(v.begin(),v.end())
+#define vec() vector<char>v
+const ll mx=1e8+123;
+bool vis[mx];
+int main(){
+	ll n;
+	cin>>n;
+
+	for(ll i=1;i<=n;i++){
+		vis[i*i]=1;
+	}
+
+	ll cnt=0;
+	for(ll i=1;i<=n;i++){
+		for(ll j=i;j<=n;j++){
+			if(((i*i)+(j*j))>mx){
+				break;
+			}
+			else if(vis[(i*i)+(j*j)]==1) cnt++;
+		}
+	}
+	cout<<cnt<<endl;
+
+return 0;
+}
