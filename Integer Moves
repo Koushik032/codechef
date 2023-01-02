@@ -1,0 +1,29 @@
+///Joy Sri-Krisno///
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define max1 10000
+#define pb push_back
+#define fi first
+#define se second
+#define vst() sort(v.begin(),v.end())
+#define vec() vector<ll>v
+const int mx=1e3+123;
+bool vis[mx];
+int main()
+{
+	ll t;
+	cin>>t;
+	while(t--){
+		ll x,y;
+		cin>>x>>y;
+		ll result=sqrt((x*x)+(y*y));
+		//cout<<result<<endl;
+		if(x==0 && y==0)cout<<0<<endl;
+		else if((result*result)==((x*x)+(y*y)))cout<<1<<endl;
+		else cout<<2<<endl;
+	}
+	return 0;
+}
+
+
