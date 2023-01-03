@@ -1,0 +1,86 @@
+///Joy Sri-Krisno///
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define max1 10000
+#define pb push_back
+#define fi first
+#define se second
+#define vst() sort(v.begin(),v.end())
+#define vec() vector<char>v
+const int mx=1e6+123;
+ll vis[mx];
+int main(){
+  ll t;
+  cin>>t;
+  ll cnt1=0;
+  for(ll i=1;i<=999999;i++){
+   if(i<=10){
+      cnt1++;
+      vis[i]=cnt1;
+   }
+   else if(i>10 && i<=99){
+      if(i%10==0){
+      cnt1++;
+      vis[i]=cnt1;
+   }
+   else{
+      vis[i]=cnt1;
+   }
+   }
+   else if(i>=100 && i<=999){
+      if(i%100==0){
+      cnt1++;
+      vis[i]=cnt1;
+   }
+   else{
+      vis[i]=cnt1;
+   }
+   }
+   else if(i>=1000 && i<=9999){
+      if(i%1000==0){
+      cnt1++;
+      vis[i]=cnt1;
+   }
+   else{
+      vis[i]=cnt1;
+   }
+   }
+   else if(i>=10000 && i<=99999){
+      if(i%10000==0){
+      cnt1++;
+      vis[i]=cnt1;
+   }
+   else{
+      vis[i]=cnt1;
+   }
+   }
+   else if(i>=100000 && i<=999999){
+      if(i%100000==0){
+      cnt1++;
+      vis[i]=cnt1;
+   }
+   else{
+      vis[i]=cnt1;
+   }
+   }
+   else if(i>=1000000 && i<=9999999){
+      if(i%1000000==0){
+      cnt1++;
+      vis[i]=cnt1;
+   }
+   else{
+      vis[i]=cnt1;
+   }
+   }
+  }
+  // for(ll i=1;i<=100;i++){
+  //  cout<<i<<" "<<vis[i]<<endl;
+  // }
+  while(t--){
+   ll n;
+   cin>>n;
+   cout<<vis[n]<<endl;
+  }
+    return 0;
+}
