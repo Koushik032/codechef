@@ -1,0 +1,43 @@
+///Joy Sri-Krisno///
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define max1 10000
+#define pb push_back
+#define fi first
+#define se second
+#define vst() sort(v.begin(),v.end())
+#define vec() vector<ll>v
+//const ll mx=1e8+123;
+//bool vis[mx];
+int main(){
+	ll n;
+	cin>>n;
+
+	vec();
+	vector<ll>v1;
+
+	while(n>0){
+		ll a=n%10;
+		v.pb(a);
+		n=n/10;
+	}
+	//for(ll i=0;i<v.size();i++)cout<<v[i];
+	reverse(v.begin(),v.end());
+	//for(auto u:v)cout<<u;
+	ll tmp=v[0];
+	//cout<<tmp<<endl;
+	for(ll i=0;i<v.size();i++){
+		ll sum=(9-v[i]);
+		if(sum<v[i]){
+			v1.pb(sum);
+		}
+		else{
+			v1.pb(v[i]);
+		}
+	}
+	if(v1[0]==0)v1[0]=tmp;
+	for(auto u:v1)cout<<u;
+
+return 0;
+}
