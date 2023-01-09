@@ -1,0 +1,28 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin >> t;
+    while (t--) {
+        vector<int> a(26);
+    	for (auto& i : a)
+    		cin >> i;
+    	string s;
+    	cin >> s;
+    	bool flag;
+    	int ans = 0;
+    	const string main = "abcdefghijklmnopqrstuvwxyz";
+    	for (int m = 0; m < main.length(); m++) {
+    		flag = false;
+    		for (int n = 0; n < s.size(); n++)
+    			if (main[m] == s[n])
+    				flag = true;
+    		if (!flag)
+    			ans += a[m];
+    	}
+    	cout << ans << '\n';
+    }
+	return 0;
+}
